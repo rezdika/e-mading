@@ -1,59 +1,221 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 📰 ARGA MADING - Digital School Bulletin Platform
 
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <img src="public/assets/img/logo.webp" alt="Arga Mading Logo" width="200">
 </p>
 
-## About Laravel
+<p align="center">
+  <strong>Platform digital mading sekolah modern dengan sistem approval terintegrasi</strong>
+</p>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<p align="center">
+  <img src="https://img.shields.io/badge/Laravel-12.37.0-red?style=flat-square&logo=laravel" alt="Laravel">
+  <img src="https://img.shields.io/badge/PHP-8.3.16-blue?style=flat-square&logo=php" alt="PHP">
+  <img src="https://img.shields.io/badge/Bootstrap-5.0-purple?style=flat-square&logo=bootstrap" alt="Bootstrap">
+  <img src="https://img.shields.io/badge/SQLite-Database-green?style=flat-square&logo=sqlite" alt="SQLite">
+</p>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 🎯 **Overview**
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Arga Mading adalah platform digital yang menggantikan sistem mading konvensional sekolah dengan fitur modern seperti:
+- **Multi-role authentication** (Admin, Guru, Siswa)
+- **Article management** dengan workflow approval
+- **Real-time notifications**
+- **File upload system**
+- **Responsive design**
+- **Dashboard analytics**
 
-## Learning Laravel
+## 🚀 **Quick Start**
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+### Prerequisites
+- PHP 8.3+
+- Composer
+- Node.js (optional)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Installation
 
-## Laravel Sponsors
+1. **Clone repository**
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/arga-mading.git
+   cd arga-mading
+   ```
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+2. **Install dependencies**
+   ```bash
+   composer install
+   ```
 
-### Premium Partners
+3. **Environment setup**
+   ```bash
+   cp .env.example .env
+   php artisan key:generate
+   ```
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+4. **Database setup**
+   ```bash
+   touch database/database.sqlite
+   php artisan migrate --seed
+   ```
 
-## Contributing
+5. **Storage link**
+   ```bash
+   php artisan storage:link
+   ```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+6. **Run application**
+   ```bash
+   php artisan serve
+   ```
 
-## Code of Conduct
+Visit: `http://127.0.0.1:8000`
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## 🔐 **Default Login Credentials**
 
-## Security Vulnerabilities
+| Role | Username | Password | Access Level |
+|------|----------|----------|--------------|
+| **Admin** | `admin` | `admin123` | Full system control |
+| **Guru** | `guru` | `guru123` | Content + moderation |
+| **Siswa** | `siswa` | `siswa123` | Read + write (approval needed) |
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## ✨ **Key Features**
 
-## License
+### 📝 **Content Management**
+- Rich text editor for articles
+- Image upload with storage management
+- Category-based organization
+- Search and filtering capabilities
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### 🔄 **Workflow System**
+```
+Draft → Pending → Published
+         ↓
+    Approved/Rejected
+```
+
+### 👥 **Role-Based Access Control**
+- **Admin**: Full system management
+- **Guru**: Content creation and moderation
+- **Siswa**: Article creation with approval requirement
+
+### 🔔 **Notification System**
+- Real-time notifications
+- Moderation alerts
+- User activity tracking
+
+### 📊 **Analytics & Reporting**
+- Dashboard statistics
+- Article performance metrics
+- PDF report generation
+
+## 🏗️ **Tech Stack**
+
+- **Backend**: Laravel 12.37.0
+- **Database**: SQLite (dev) / MySQL (prod)
+- **Frontend**: Bootstrap 5 + Custom CSS
+- **Authentication**: Laravel Sanctum
+- **File Storage**: Laravel File Storage
+- **Icons**: Bootstrap Icons
+
+## 📁 **Project Structure**
+
+```
+arga_mading/
+├── app/
+│   ├── Http/Controllers/     # Business logic
+│   ├── Models/              # Database models
+│   ├── Policies/            # Authorization rules
+│   └── Helpers/             # Utility functions
+├── database/
+│   ├── migrations/          # Database schema
+│   └── seeders/            # Sample data
+├── resources/
+│   └── views/              # Blade templates
+├── public/
+│   ├── assets/             # CSS, JS, Images
+│   └── storage/            # Uploaded files
+└── routes/
+    └── web.php             # Application routes
+```
+
+## 🔧 **Configuration**
+
+### Database Configuration
+For production, update `.env`:
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=your_database
+DB_USERNAME=your_username
+DB_PASSWORD=your_password
+```
+
+### File Storage
+Configure file storage in `config/filesystems.php` for production deployment.
+
+## 📖 **Documentation**
+
+- [User Guide](USER_GUIDE_ARGA_MADING.md) - Comprehensive user manual
+- [Login Info](LOGIN_INFO.md) - Default credentials and access levels
+- [Notification System](SISTEM_NOTIFIKASI.md) - Notification features guide
+
+## 🧪 **Testing**
+
+Run tests:
+```bash
+php artisan test
+```
+
+## 🚀 **Deployment**
+
+### Production Checklist
+- [ ] Switch to production database (MySQL/PostgreSQL)
+- [ ] Configure mail server
+- [ ] Set up file storage (AWS S3/local)
+- [ ] Enable HTTPS
+- [ ] Configure backup system
+- [ ] Set up monitoring
+
+### Environment Variables
+```env
+APP_ENV=production
+APP_DEBUG=false
+APP_URL=https://yourdomain.com
+```
+
+## 🤝 **Contributing**
+
+1. Fork the repository
+2. Create feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit changes (`git commit -m 'Add amazing feature'`)
+4. Push to branch (`git push origin feature/amazing-feature`)
+5. Open Pull Request
+
+## 📝 **License**
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👥 **Team**
+
+- **Developer**: Arga Mading Team
+- **Framework**: Laravel Community
+- **Design**: Bootstrap Team
+
+## 📞 **Support**
+
+- **Email**: support@argamading.sch.id
+- **Documentation**: [User Guide](USER_GUIDE_ARGA_MADING.md)
+- **Issues**: [GitHub Issues](https://github.com/YOUR_USERNAME/arga-mading/issues)
+
+## 🎉 **Acknowledgments**
+
+- Laravel Framework
+- Bootstrap CSS Framework
+- Bootstrap Icons
+- All contributors and testers
+
+---
+
+<p align="center">
+  Made with ❤️ for digital education
+</p>
