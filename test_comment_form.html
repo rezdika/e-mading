@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Comment Form</title>
+    <meta name="csrf-token" content="test-token">
+</head>
+<body>
+    <h2>Test Form Komentar Sederhana</h2>
+    
+    <!-- Form tanpa JavaScript validation -->
+    <form action="/articles/1/comments" method="POST" style="border: 1px solid #ccc; padding: 20px; margin: 20px;">
+        <input type="hidden" name="_token" value="test-csrf-token">
+        
+        <label for="komentar">Komentar:</label><br>
+        <textarea name="komentar" id="komentar" rows="4" cols="50" required>Test komentar dari siswa</textarea><br><br>
+        
+        <button type="submit">Kirim Komentar</button>
+    </form>
+    
+    <h3>Instruksi Testing:</h3>
+    <ol>
+        <li>Login sebagai siswa di aplikasi utama</li>
+        <li>Buka halaman artikel (blog-details)</li>
+        <li>Buka Developer Tools (F12)</li>
+        <li>Pergi ke tab Console</li>
+        <li>Coba submit komentar</li>
+        <li>Lihat apakah ada error di console</li>
+        <li>Pergi ke tab Network, lihat request yang dikirim</li>
+    </ol>
+    
+    <h3>Yang Harus Diperiksa:</h3>
+    <ul>
+        <li>Apakah request POST terkirim ke /articles/{id}/comments?</li>
+        <li>Apakah response code 200, 302, atau error?</li>
+        <li>Apakah ada error JavaScript di console?</li>
+        <li>Apakah CSRF token valid?</li>
+        <li>Apakah user benar-benar authenticated?</li>
+    </ul>
+</body>
+</html>

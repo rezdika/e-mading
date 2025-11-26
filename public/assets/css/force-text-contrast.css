@@ -1,0 +1,133 @@
+/* Force Text Contrast - Override semua warna teks yang tidak kontras */
+
+/* Background putih/terang = teks hitam */
+.article-content-wrapper *,
+.stat-card *,
+.comment-form *,
+.comment-item *,
+.related-content *,
+.author-info *,
+.pengumuman-card *,
+.notification-card *,
+[style*="background: white"] *,
+[style*="background: #fff"] *,
+[style*="background-color: white"] *,
+[style*="background-color: #fff"] *,
+.bg-white *,
+.card *,
+.modal-content * {
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
+}
+
+/* Background gradient/gelap = teks hitam dengan shadow */
+.article-hero *,
+.stats-hero *,
+.notification-hero *,
+.page-title *,
+[style*="linear-gradient"] *,
+[style*="background: linear-gradient"] * {
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
+    text-shadow: 1px 1px 3px rgba(255,255,255,0.5) !important;
+}
+
+/* Tombol dengan background warna = teks hitam */
+.action-btn,
+.action-btn *,
+.tag-item,
+.tag-item *,
+.btn-like,
+.btn-like *,
+.btn-share,
+.btn-share *,
+.btn-back,
+.btn-back *,
+[class*="btn-"] span,
+[class*="btn-"] i {
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
+}
+
+/* Link dan anchor */
+a:not(.btn):not(.action-btn) {
+    color: #667eea !important;
+}
+
+a:not(.btn):not(.action-btn):hover {
+    color: #764ba2 !important;
+}
+
+/* Text muted tetap gelap */
+.text-muted {
+    color: #666666 !important;
+    -webkit-text-fill-color: #666666 !important;
+}
+
+/* Breadcrumb */
+.breadcrumb-custom *,
+.breadcrumbs * {
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
+    text-shadow: 1px 1px 2px rgba(255,255,255,0.5) !important;
+}
+
+/* Meta info */
+.meta-item,
+.meta-item *,
+.article-meta-hero,
+.article-meta-hero * {
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
+    text-shadow: 1px 1px 2px rgba(255,255,255,0.5) !important;
+}
+
+/* Category badge */
+.article-category,
+.post-category {
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
+}
+
+/* Judul artikel */
+.article-main-title,
+.heading-title,
+h1, h2, h3, h4, h5, h6 {
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
+}
+
+/* Paragraf */
+p {
+    color: #333333 !important;
+    -webkit-text-fill-color: #333333 !important;
+}
+
+/* Span dalam elemen dengan background */
+span {
+    color: inherit !important;
+}
+
+/* Override untuk elemen yang pasti perlu hitam */
+.article-tags .tag-item,
+.article-actions .action-btn {
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
+}
+
+/* Icon */
+i, .bi {
+    color: inherit !important;
+}
+
+/* Form elements */
+input, textarea, select {
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
+}
+
+/* Alert */
+.alert * {
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
+}

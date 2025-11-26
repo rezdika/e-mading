@@ -1,0 +1,250 @@
+/* FINAL Color Hunt Theme Override - HIGHEST PRIORITY */
+/* This file must be loaded LAST to override all other styles */
+
+/* DISABLE ALL ANIMATIONS AND TRANSITIONS */
+*, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+    animation-duration: 0s !important;
+    animation-delay: 0s !important;
+    transition-duration: 0s !important;
+    transition-delay: 0s !important;
+    backdrop-filter: none !important;
+    filter: none !important;
+}
+
+/* REMOVE ALL BACKGROUND IMAGES AND GRADIENTS */
+* {
+    background-image: none !important;
+}
+
+/* REMOVE ALL HOVER EFFECTS */
+*:hover {
+    transform: none !important;
+    animation: none !important;
+    transition: none !important;
+}
+
+/* FORCE COLOR HUNT COLORS */
+:root {
+    --background-color: #f9f8f6 !important;
+    --surface-color: #efe9e3 !important;
+    --default-color: #5a5a5a !important;
+    --heading-color: #c9b59c !important;
+    --accent-color: #c9b59c !important;
+    --contrast-color: #ffffff !important;
+    --nav-color: #5a5a5a !important;
+    --nav-hover-color: #c9b59c !important;
+}
+
+/* OVERRIDE BODY AND MAIN ELEMENTS */
+body {
+    background: #f9f8f6 !important;
+    background-color: #f9f8f6 !important;
+    background-image: none !important;
+    color: #5a5a5a !important;
+}
+
+body::before {
+    display: none !important;
+}
+
+/* OVERRIDE ALL SECTIONS */
+section, .section, .hero, .blog-hero, .featured-posts, .latest-posts, .category-section, .about, .team, .contact {
+    background: #f9f8f6 !important;
+    background-color: #f9f8f6 !important;
+    background-image: none !important;
+}
+
+/* OVERRIDE HEADER */
+.header {
+    background: #efe9e3 !important;
+    background-color: #efe9e3 !important;
+    background-image: none !important;
+    border-bottom: 1px solid #d9cfc7 !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+}
+
+.header::before {
+    display: none !important;
+}
+
+.sitename {
+    color: #c9b59c !important;
+    background: none !important;
+    -webkit-background-clip: unset !important;
+    -webkit-text-fill-color: unset !important;
+    background-clip: unset !important;
+    text-fill-color: unset !important;
+}
+
+/* OVERRIDE ALL CARDS */
+.card, .blog-card, .featured-post, .compact-post, .card-post, .post-card, .article-card, .hero-post, .grid-post, .sidebar-post, .team-member, .form-container {
+    background: #efe9e3 !important;
+    background-color: #efe9e3 !important;
+    background-image: none !important;
+    border: 1px solid #d9cfc7 !important;
+    box-shadow: 0 8px 20px rgba(201, 181, 156, 0.2) !important;
+}
+
+/* OVERRIDE CONTACT INFO PANEL */
+.contact-info-panel {
+    background: #c9b59c !important;
+    background-color: #c9b59c !important;
+    background-image: none !important;
+    color: white !important;
+}
+
+/* OVERRIDE ALL BUTTONS */
+.btn-primary, .btn-read-more, .readmore, .btn-submit, .btn-outline-primary {
+    background: #c9b59c !important;
+    background-color: #c9b59c !important;
+    background-image: none !important;
+    border-color: #c9b59c !important;
+    color: white !important;
+}
+
+.btn-primary:hover, .btn-read-more:hover, .readmore:hover, .btn-submit:hover, .btn-outline-primary:hover {
+    background: #b8a082 !important;
+    background-color: #b8a082 !important;
+    background-image: none !important;
+    border-color: #b8a082 !important;
+    color: white !important;
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+/* OVERRIDE NAVIGATION */
+.navmenu a {
+    color: #c9b59c !important;
+}
+
+.navmenu a:hover, .navmenu .active {
+    color: #b8a082 !important;
+}
+
+/* OVERRIDE HEADINGS */
+h1, h2, h3, h4, h5, h6, .heading-color {
+    color: #c9b59c !important;
+}
+
+/* OVERRIDE BADGES */
+.badge, .category-badge, .cat-badge {
+    background: #c9b59c !important;
+    background-color: #c9b59c !important;
+    background-image: none !important;
+    color: white !important;
+}
+
+/* OVERRIDE FORMS */
+.form-control {
+    background: #f9f8f6 !important;
+    background-color: #f9f8f6 !important;
+    border-color: #d9cfc7 !important;
+}
+
+.form-control:focus {
+    border-color: #c9b59c !important;
+    box-shadow: 0 0 0 0.2rem rgba(201, 181, 156, 0.25) !important;
+}
+
+/* OVERRIDE HERO CONTENT */
+.hero-content, .blog-hero-content {
+    background: #efe9e3 !important;
+    background-color: #efe9e3 !important;
+    background-image: none !important;
+    border: 2px solid #d9cfc7 !important;
+    border-radius: 20px !important;
+}
+
+/* OVERRIDE PAGINATION */
+.pagination .page-link {
+    background: #f9f8f6 !important;
+    background-color: #f9f8f6 !important;
+    border-color: #d9cfc7 !important;
+    color: #c9b59c !important;
+}
+
+.pagination .page-link:hover {
+    background: #c9b59c !important;
+    background-color: #c9b59c !important;
+    border-color: #c9b59c !important;
+    color: white !important;
+}
+
+.pagination .page-item.active .page-link {
+    background: #c9b59c !important;
+    background-color: #c9b59c !important;
+    border-color: #c9b59c !important;
+    color: white !important;
+}
+
+/* REMOVE ALL PATTERN ELEMENTS */
+.mading-pattern, .pattern-left, .pattern-right, .pattern-top, .pattern-bottom, .music-note-bg {
+    display: none !important;
+}
+
+/* DISABLE ALL KEYFRAME ANIMATIONS */
+@keyframes fadeInOut { 0%, 100% { opacity: 1; } }
+@keyframes musicScroll { 0%, 100% { transform: none; } }
+@keyframes headerFloat { 0%, 100% { transform: none; } }
+@keyframes musicFloat { 0%, 100% { transform: none; } }
+@keyframes fadeInUp { 0%, 100% { transform: none; } }
+
+/* OVERRIDE FOOTER */
+.footer {
+    background: #efe9e3 !important;
+    background-color: #efe9e3 !important;
+    background-image: none !important;
+    border-top: 1px solid #d9cfc7 !important;
+}
+
+/* OVERRIDE TABLES */
+.table {
+    background: #f9f8f6 !important;
+    background-color: #f9f8f6 !important;
+}
+
+.table-light {
+    background: #efe9e3 !important;
+    background-color: #efe9e3 !important;
+}
+
+/* OVERRIDE ALERTS */
+.alert-info {
+    background: #efe9e3 !important;
+    background-color: #efe9e3 !important;
+    border-color: #d9cfc7 !important;
+    color: #5a5a5a !important;
+}
+
+/* TEXT CONTRAST FIXES */
+.contact-info-panel, .contact-info-panel h3, .contact-info-panel p, .contact-info-panel h5, .info-card h4, .info-card p {
+    color: white !important;
+}
+
+.hero-content, .blog-hero-content, .hero-content h1, .hero-content h2, .hero-content p, .blog-hero-content h1, .blog-hero-content h2, .blog-hero-content p {
+    color: #5a5a5a !important;
+}
+
+.card, .blog-card, .featured-post, .compact-post, .card-post {
+    color: #5a5a5a !important;
+}
+
+.card h1, .card h2, .card h3, .card h4, .card h5, .card h6, .blog-card h1, .blog-card h2, .blog-card h3, .blog-card h4, .blog-card h5, .blog-card h6 {
+    color: #c9b59c !important;
+}
+
+.header .logo h1 {
+    color: #c9b59c !important;
+}
+
+.footer, .footer p, .footer a {
+    color: #5a5a5a !important;
+}
+
+.footer h1, .footer h2, .footer h3, .footer h4, .footer h5, .footer h6 {
+    color: #c9b59c !important;
+}

@@ -1,0 +1,165 @@
+/* Notification System - Color Hunt Theme */
+.notification-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    max-width: 350px;
+}
+
+.notification {
+    background: #efe9e3;
+    border: 1px solid #d9cfc7;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 10px;
+    box-shadow: 0 8px 20px rgba(201, 181, 156, 0.3);
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.notification.success {
+    border-left: 4px solid #28a745;
+}
+
+.notification.error {
+    border-left: 4px solid #dc3545;
+}
+
+.notification.info {
+    border-left: 4px solid #c9b59c;
+}
+
+.notification.warning {
+    border-left: 4px solid #ffc107;
+}
+
+.notification-icon {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
+}
+
+.notification-content {
+    flex: 1;
+}
+
+.notification-title {
+    font-weight: 600;
+    color: #c9b59c;
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+.notification-message {
+    color: #5a5a5a;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.notification-close {
+    background: none;
+    border: none;
+    color: #5a5a5a;
+    cursor: pointer;
+    padding: 0;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notification-bell {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #c9b59c;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(201, 181, 156, 0.4);
+    z-index: 9998;
+}
+
+.notification-bell:hover {
+    background: #b8a082;
+}
+
+.notification-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: #dc3545;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+/* Navbar Notification Dropdown */
+.dropdown-menu .dropdown-item {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #f8f9fa;
+}
+
+.dropdown-menu .dropdown-item:last-child {
+    border-bottom: none;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #f8f9fa;
+}
+
+.dropdown-menu .dropdown-item.bg-light {
+    background-color: rgba(102, 126, 234, 0.1) !important;
+}
+
+.dropdown-menu .dropdown-header {
+    padding: 0.75rem 1rem 0.5rem;
+    font-weight: 600;
+    color: #495057;
+}
+
+/* Notification Badge Animation */
+.badge {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 768px) {
+    .notification-container {
+        right: 10px;
+        left: 10px;
+        max-width: none;
+    }
+    
+    .notification-bell {
+        right: 10px;
+    }
+    
+    .dropdown-menu {
+        width: 280px !important;
+    }
+}

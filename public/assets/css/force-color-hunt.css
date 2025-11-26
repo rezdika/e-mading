@@ -1,0 +1,269 @@
+/* Force Color Hunt Theme Override - f9f8f6efe9e3d9cfc7c9b59c */
+
+/* Remove ALL background images, gradients, blur effects, animations, and transforms */
+* {
+    background-image: none !important;
+    animation: none !important;
+    transition: none !important;
+    backdrop-filter: none !important;
+    filter: none !important;
+    transform: none !important;
+}
+
+/* Remove hover effects */
+*:hover {
+    transform: none !important;
+    animation: none !important;
+    transition: none !important;
+}
+
+/* Remove all keyframe animations */
+@keyframes * {
+    from { opacity: 1; }
+    to { opacity: 1; }
+}
+
+/* Disable all CSS animations */
+*, *::before, *::after {
+    animation-duration: 0s !important;
+    animation-delay: 0s !important;
+    transition-duration: 0s !important;
+    transition-delay: 0s !important;
+}
+
+/* Force body background */
+body {
+    background: #f9f8f6 !important;
+    background-color: #f9f8f6 !important;
+    background-image: none !important;
+}
+
+/* Force all sections */
+section,
+.section,
+.hero,
+.blog-hero,
+.featured-posts,
+.latest-posts,
+.category-section,
+.about,
+.team,
+.contact {
+    background: #f9f8f6 !important;
+    background-color: #f9f8f6 !important;
+    background-image: none !important;
+}
+
+/* Force header and footer */
+.header,
+.footer {
+    background: #efe9e3 !important;
+    background-color: #efe9e3 !important;
+    background-image: none !important;
+    border-color: #d9cfc7 !important;
+}
+
+/* Force all cards */
+.card,
+.blog-card,
+.featured-post,
+.compact-post,
+.card-post,
+.post-card,
+.article-card,
+.hero-post,
+.grid-post,
+.sidebar-post,
+.team-member,
+.contact-info-panel,
+.form-container {
+    background: #efe9e3 !important;
+    background-color: #efe9e3 !important;
+    background-image: none !important;
+    border: 1px solid #d9cfc7 !important;
+}
+
+/* Force navigation */
+.navmenu a {
+    color: #c9b59c !important;
+}
+
+.navmenu a:hover,
+.navmenu .active {
+    color: #b8a082 !important;
+}
+
+/* Force buttons */
+.btn-primary,
+.btn-read-more,
+.readmore,
+.btn-submit {
+    background: #c9b59c !important;
+    background-color: #c9b59c !important;
+    background-image: none !important;
+    border-color: #c9b59c !important;
+    color: white !important;
+}
+
+.btn-primary:hover,
+.btn-read-more:hover,
+.readmore:hover,
+.btn-submit:hover {
+    background: #b8a082 !important;
+    background-color: #b8a082 !important;
+    background-image: none !important;
+    border-color: #b8a082 !important;
+    color: white !important;
+}
+
+/* Force headings */
+h1, h2, h3, h4, h5, h6,
+.heading-color {
+    color: #c9b59c !important;
+}
+
+/* Force badges */
+.badge,
+.category-badge,
+.cat-badge {
+    background: #c9b59c !important;
+    background-color: #c9b59c !important;
+    background-image: none !important;
+    color: white !important;
+}
+
+/* Force forms */
+.form-control {
+    background: #f9f8f6 !important;
+    background-color: #f9f8f6 !important;
+    border-color: #d9cfc7 !important;
+}
+
+.form-control:focus {
+    border-color: #c9b59c !important;
+    box-shadow: 0 0 0 0.2rem rgba(201, 181, 156, 0.25) !important;
+}
+
+/* Force hero content */
+.hero-content,
+.blog-hero-content {
+    background: #efe9e3 !important;
+    background-color: #efe9e3 !important;
+    background-image: none !important;
+    border: 2px solid #d9cfc7 !important;
+    border-radius: 20px !important;
+}
+
+/* Force contact panel */
+.contact-info-panel {
+    background: #c9b59c !important;
+    background-color: #c9b59c !important;
+    background-image: none !important;
+}
+
+/* Force pagination */
+.pagination .page-link {
+    background: #f9f8f6 !important;
+    background-color: #f9f8f6 !important;
+    border-color: #d9cfc7 !important;
+    color: #c9b59c !important;
+}
+
+.pagination .page-link:hover {
+    background: #c9b59c !important;
+    background-color: #c9b59c !important;
+    border-color: #c9b59c !important;
+    color: white !important;
+}
+
+.pagination .page-item.active .page-link {
+    background: #c9b59c !important;
+    background-color: #c9b59c !important;
+    border-color: #c9b59c !important;
+    color: white !important;
+}
+
+/* Force search widget */
+.search-widget form {
+    background: #efe9e3 !important;
+    background-color: #efe9e3 !important;
+    border-color: #d9cfc7 !important;
+}
+
+/* Force table */
+.table {
+    background: #f9f8f6 !important;
+    background-color: #f9f8f6 !important;
+}
+
+.table-light {
+    background: #efe9e3 !important;
+    background-color: #efe9e3 !important;
+}
+
+/* Force alerts */
+.alert-info {
+    background: #efe9e3 !important;
+    background-color: #efe9e3 !important;
+    border-color: #d9cfc7 !important;
+    color: #5a5a5a !important;
+}
+
+/* Remove any remaining animations */
+@keyframes * {
+    from { opacity: 1; }
+    to { opacity: 1; }
+}
+
+/* Text contrast fixes */
+/* White text on dark backgrounds */
+.contact-info-panel,
+.contact-info-panel h3,
+.contact-info-panel p,
+.contact-info-panel h5,
+.info-card h4,
+.info-card p {
+    color: white !important;
+}
+
+/* Dark text on light backgrounds */
+.hero-content,
+.blog-hero-content,
+.hero-content h1,
+.hero-content h2,
+.hero-content p,
+.blog-hero-content h1,
+.blog-hero-content h2,
+.blog-hero-content p {
+    color: #5a5a5a !important;
+}
+
+/* Ensure readability on cards */
+.card,
+.blog-card,
+.featured-post,
+.compact-post,
+.card-post {
+    color: #5a5a5a !important;
+}
+
+.card h1, .card h2, .card h3, .card h4, .card h5, .card h6,
+.blog-card h1, .blog-card h2, .blog-card h3, .blog-card h4, .blog-card h5, .blog-card h6 {
+    color: #c9b59c !important;
+}
+
+/* Navigation text */
+.header .logo h1 {
+    color: #c9b59c !important;
+}
+
+/* Footer text */
+.footer,
+.footer p,
+.footer a {
+    color: #5a5a5a !important;
+}
+
+.footer h1, .footer h2, .footer h3, .footer h4, .footer h5, .footer h6 {
+    color: #c9b59c !important;
+}

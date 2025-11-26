@@ -1,0 +1,296 @@
+/* Color Hunt Theme - f9f8f6efe9e3d9cfc7c9b59c */
+:root {
+    --color-1: #f9f8f6; /* Lightest cream */
+    --color-2: #efe9e3; /* Light beige */
+    --color-3: #d9cfc7; /* Medium beige */
+    --color-4: #c9b59c; /* Dark brown */
+}
+
+/* Remove all animations and transitions */
+* {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+}
+
+/* Override all backgrounds and gradients */
+* {
+    background-image: none !important;
+}
+
+/* Main layout colors */
+.header {
+    background-color: var(--color-2) !important;
+    border-bottom: 1px solid var(--color-3) !important;
+}
+
+.footer {
+    background-color: var(--color-2) !important;
+    border-top: 1px solid var(--color-3) !important;
+}
+
+/* Navigation */
+.navmenu a {
+    color: var(--color-4) !important;
+}
+
+.navmenu a:hover,
+.navmenu .active {
+    color: #b8a082 !important;
+}
+
+/* Hero sections */
+.blog-hero,
+.hero,
+.hero-section {
+    background: var(--color-1) !important;
+}
+
+.blog-hero-content,
+.hero-content {
+    background: var(--color-2) !important;
+    border: 1px solid var(--color-3) !important;
+    border-radius: 20px !important;
+    padding: 40px !important;
+}
+
+/* Cards and sections */
+.blog-card,
+.featured-post,
+.compact-post,
+.card-post,
+.post-card,
+.article-card {
+    background: var(--color-2) !important;
+    border: 1px solid var(--color-3) !important;
+}
+
+/* Buttons */
+.btn-read-more,
+.btn-primary,
+.readmore {
+    background: var(--color-4) !important;
+    border-color: var(--color-4) !important;
+    color: white !important;
+}
+
+.btn-read-more:hover,
+.btn-primary:hover,
+.readmore:hover {
+    background: #b8a082 !important;
+    border-color: #b8a082 !important;
+    color: white !important;
+}
+
+/* Category badges */
+.category-badge,
+.cat-badge {
+    background: var(--color-4) !important;
+    color: white !important;
+}
+
+/* Search */
+.search-widget form {
+    background: var(--color-2) !important;
+    border-color: var(--color-3) !important;
+}
+
+/* Sections */
+section,
+.section {
+    background-color: var(--color-1) !important;
+}
+
+.featured-posts,
+.latest-posts,
+.category-section {
+    background: var(--color-1) !important;
+}
+
+/* Override specific gradients */
+.featured-posts {
+    background: var(--color-1) !important;
+}
+
+/* Contact form */
+.contact-info-panel {
+    background: var(--color-4) !important;
+}
+
+.form-container {
+    background: var(--color-2) !important;
+    border: 1px solid var(--color-3) !important;
+}
+
+/* About section */
+.about-img {
+    border: 2px solid var(--color-3) !important;
+}
+
+.experience-badge,
+.projects-badge {
+    background: var(--color-4) !important;
+    color: white !important;
+}
+
+/* Team section */
+.team-member {
+    background: var(--color-2) !important;
+    border-color: var(--color-3) !important;
+}
+
+/* Blog details */
+.blog-details .article-hero {
+    background: var(--color-2) !important;
+}
+
+/* Widgets */
+.widget-item {
+    background: var(--color-2) !important;
+    border: 1px solid var(--color-3) !important;
+}
+
+/* Override any remaining gradients */
+.btn,
+.badge,
+.alert,
+.card {
+    background-image: none !important;
+}
+
+/* Override main colors */
+body {
+    background-color: var(--color-1) !important;
+    color: #5a5a5a !important;
+}
+
+/* Cards and surfaces */
+.header-card,
+.welcome-card,
+.stats-card,
+.action-card,
+.activity-card,
+.content-card,
+.stat-card {
+    background: var(--color-2) !important;
+    border: 1px solid var(--color-3) !important;
+    box-shadow: 0 8px 20px rgba(201, 181, 156, 0.2) !important;
+}
+
+/* Primary buttons */
+.btn-primary,
+.logout-btn {
+    background: var(--color-4) !important;
+    border-color: var(--color-4) !important;
+    color: white !important;
+}
+
+.btn-primary:hover,
+.logout-btn:hover {
+    background: #b8a082 !important;
+    border-color: #b8a082 !important;
+    color: white !important;
+}
+
+/* Secondary buttons */
+.btn-warning {
+    background: var(--color-3) !important;
+    border-color: var(--color-3) !important;
+    color: #5a5a5a !important;
+}
+
+/* Tables */
+.table {
+    background: var(--color-1) !important;
+}
+
+.table-light {
+    background: var(--color-2) !important;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-4) !important;
+}
+
+/* Pagination */
+.pagination .page-link {
+    background: var(--color-1) !important;
+    border-color: var(--color-3) !important;
+    color: var(--color-4) !important;
+}
+
+.pagination .page-link:hover {
+    background: var(--color-4) !important;
+    border-color: var(--color-4) !important;
+    color: white !important;
+}
+
+.pagination .page-item.active .page-link {
+    background: var(--color-4) !important;
+    border-color: var(--color-4) !important;
+    color: white !important;
+}
+
+.pagination .page-item.disabled .page-link {
+    background: var(--color-2) !important;
+    border-color: var(--color-3) !important;
+    color: #999 !important;
+}
+
+/* Remove gradients */
+* {
+    background-image: none !important;
+}
+
+/* Stat numbers */
+.stat-number {
+    color: var(--color-4) !important;
+}
+
+/* Icons */
+.stat-icon {
+    background: var(--color-4) !important;
+    color: white !important;
+}
+
+/* Badges */
+.badge {
+    background: var(--color-4) !important;
+    color: white !important;
+}
+
+.badge.bg-success {
+    background: #28a745 !important;
+}
+
+.badge.bg-warning {
+    background: #ffc107 !important;
+    color: #212529 !important;
+}
+
+.badge.bg-danger {
+    background: #dc3545 !important;
+}
+
+.badge.bg-secondary {
+    background: #6c757d !important;
+}
+
+/* Form controls */
+.form-control {
+    background: var(--color-1) !important;
+    border-color: var(--color-3) !important;
+}
+
+.form-control:focus {
+    border-color: var(--color-4) !important;
+    box-shadow: 0 0 0 0.2rem rgba(201, 181, 156, 0.25) !important;
+}
+
+/* Alerts */
+.alert-info {
+    background: var(--color-2) !important;
+    border-color: var(--color-3) !important;
+    color: #5a5a5a !important;
+}

@@ -1,0 +1,434 @@
+/* Dashboard Global Animations */
+
+/* Keyframes untuk berbagai animasi */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Hero Section Animations */
+.hero-section,
+.category-hero,
+.dashboard-hero,
+.article-hero,
+.user-hero {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.hero-icon {
+    animation: bounce 2s infinite;
+}
+
+/* Content Card Animations */
+.content-card,
+.dashboard-card,
+.stats-card {
+    animation: fadeInUp 1s ease-out 0.3s both;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content-card:hover,
+.dashboard-card:hover,
+.stats-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.stats-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+    transition: left 0.5s;
+}
+
+.stats-card:hover::before {
+    left: 100%;
+}
+
+.stats-card:hover {
+    transform: translateY(-15px) scale(1.05);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+    border: 2px solid rgba(102, 126, 234, 0.3) !important;
+}
+
+.stats-card:hover .card-icon {
+    transform: scale(1.3) rotate(15deg);
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.4));
+}
+
+.stats-card:hover h5 {
+    color: #667eea !important;
+    transform: translateY(-3px);
+}
+
+.stats-card:hover p {
+    transform: translateY(-2px);
+    color: #764ba2 !important;
+}
+
+/* Table Animations */
+.table tbody tr {
+    animation: slideInLeft 0.6s ease-out;
+    transition: all 0.3s ease;
+}
+
+.table tbody tr:nth-child(even) {
+    animation: slideInRight 0.6s ease-out;
+}
+
+.table tbody tr:hover {
+    transform: scale(1.02);
+    background-color: #f8f9fa !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Animations */
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:hover {
+    box-shadow: 0 5px 15px rgba(13, 110, 253, 0.3);
+}
+
+.btn-success:hover {
+    box-shadow: 0 5px 15px rgba(25, 135, 84, 0.3);
+}
+
+.btn-warning:hover {
+    box-shadow: 0 5px 15px rgba(255, 193, 7, 0.3);
+}
+
+.btn-danger:hover {
+    box-shadow: 0 5px 15px rgba(220, 53, 69, 0.3);
+}
+
+/* Badge Animations */
+.badge {
+    transition: all 0.3s ease;
+}
+
+.badge:hover {
+    transform: scale(1.1);
+}
+
+/* Header Section Animations */
+.header-section {
+    animation: slideInLeft 0.8s ease-out 0.2s both;
+}
+
+.action-buttons {
+    animation: slideInRight 0.8s ease-out 0.4s both;
+}
+
+/* Alert Animations */
+.alert {
+    animation: fadeInUp 0.5s ease-out;
+}
+
+/* Card Grid Animations */
+.card-grid .card {
+    animation: zoomIn 0.6s ease-out;
+    transition: all 0.3s ease;
+}
+
+.card-grid .card:nth-child(1) { animation-delay: 0.1s; }
+.card-grid .card:nth-child(2) { animation-delay: 0.2s; }
+.card-grid .card:nth-child(3) { animation-delay: 0.3s; }
+.card-grid .card:nth-child(4) { animation-delay: 0.4s; }
+.card-grid .card:nth-child(5) { animation-delay: 0.5s; }
+.card-grid .card:nth-child(6) { animation-delay: 0.6s; }
+
+.card-grid .card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Dashboard Stats Animations */
+.stats-item {
+    animation: fadeInUp 0.8s ease-out;
+    transition: all 0.3s ease;
+}
+
+.stats-item:nth-child(1) { animation-delay: 0.1s; }
+.stats-item:nth-child(2) { animation-delay: 0.2s; }
+.stats-item:nth-child(3) { animation-delay: 0.3s; }
+.stats-item:nth-child(4) { animation-delay: 0.4s; }
+
+.stats-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Animations */
+.form-group {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.form-control {
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    transform: scale(1.02);
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+/* List Item Animations */
+.list-group-item {
+    animation: slideInLeft 0.6s ease-out;
+    transition: all 0.3s ease;
+}
+
+.list-group-item:nth-child(even) {
+    animation: slideInRight 0.6s ease-out;
+}
+
+.list-group-item:hover {
+    transform: translateX(10px);
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Breadcrumb Animations */
+.breadcrumb {
+    animation: slideInLeft 0.8s ease-out;
+}
+
+.breadcrumb-item {
+    transition: all 0.3s ease;
+}
+
+.breadcrumb-item:hover {
+    transform: scale(1.05);
+}
+
+/* Modal Animations */
+.modal.fade .modal-dialog {
+    transform: scale(0.8);
+    transition: transform 0.3s ease-out;
+}
+
+.modal.show .modal-dialog {
+    transform: scale(1);
+}
+
+/* Pagination Animations */
+.pagination .page-item {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.pagination .page-item:nth-child(1) { animation-delay: 0.1s; }
+.pagination .page-item:nth-child(2) { animation-delay: 0.2s; }
+.pagination .page-item:nth-child(3) { animation-delay: 0.3s; }
+.pagination .page-item:nth-child(4) { animation-delay: 0.4s; }
+.pagination .page-item:nth-child(5) { animation-delay: 0.5s; }
+
+/* Icon Animations */
+.icon-animated {
+    transition: all 0.3s ease;
+}
+
+.icon-animated:hover {
+    transform: rotate(360deg) scale(1.2);
+}
+
+/* Loading Animations */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading-spinner {
+    animation: spin 1s linear infinite;
+}
+
+/* Hover Effects untuk Dashboard Cards */
+.dashboard-menu-card {
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    animation: fadeInUp 0.8s ease-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.dashboard-menu-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.6s;
+}
+
+.dashboard-menu-card:hover::before {
+    left: 100%;
+}
+
+.dashboard-menu-card:hover {
+    transform: translateY(-15px) scale(1.05);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+    border: 2px solid rgba(102, 126, 234, 0.3) !important;
+}
+
+.dashboard-menu-card:hover .card-icon {
+    transform: scale(1.3) rotate(15deg);
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.4));
+}
+
+.dashboard-menu-card:hover h5 {
+    color: #667eea !important;
+    transform: translateY(-3px);
+}
+
+.dashboard-menu-card:hover p {
+    transform: translateY(-2px);
+    color: #764ba2 !important;
+}
+
+/* Stagger animation untuk dashboard items */
+.dashboard-item {
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.dashboard-item::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: radial-gradient(circle, rgba(102, 126, 234, 0.1) 0%, transparent 70%);
+    transition: all 0.6s ease;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.dashboard-item:hover::after {
+    width: 300px;
+    height: 300px;
+}
+
+.dashboard-item:nth-child(1) { animation-delay: 0.1s; }
+.dashboard-item:nth-child(2) { animation-delay: 0.2s; }
+.dashboard-item:nth-child(3) { animation-delay: 0.3s; }
+.dashboard-item:nth-child(4) { animation-delay: 0.4s; }
+.dashboard-item:nth-child(5) { animation-delay: 0.5s; }
+.dashboard-item:nth-child(6) { animation-delay: 0.6s; }
+.dashboard-item:nth-child(7) { animation-delay: 0.7s; }
+.dashboard-item:nth-child(8) { animation-delay: 0.8s; }
+
+/* Enhanced hover for dashboard links */
+a:hover .dashboard-item,
+a:hover .stats-card,
+a:hover .dashboard-menu-card {
+    transform: translateY(-15px) scale(1.05);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+    border: 2px solid rgba(102, 126, 234, 0.3) !important;
+}
+
+a:hover .dashboard-item .card-icon,
+a:hover .stats-card .card-icon {
+    transform: scale(1.3) rotate(15deg);
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.4));
+}
+
+a:hover .dashboard-item h5,
+a:hover .stats-card h5 {
+    color: #667eea !important;
+    transform: translateY(-3px);
+}
+
+a:hover .dashboard-item p,
+a:hover .stats-card p {
+    transform: translateY(-2px);
+    color: #764ba2 !important;
+}
+
+/* Responsive animations */
+@media (max-width: 768px) {
+    .content-card:hover,
+    .dashboard-card:hover,
+    .stats-card:hover {
+        transform: translateY(-3px);
+    }
+    
+    .card-grid .card:hover {
+        transform: translateY(-5px) scale(1.01);
+    }
+}

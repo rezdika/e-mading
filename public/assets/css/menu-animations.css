@@ -1,0 +1,302 @@
+/* Menu Animations CSS - Force Visible */
+
+/* Global Animation Settings */
+* {
+    animation-play-state: running !important;
+}
+
+/* Page Load Animation */
+body {
+    animation: pageLoad 1s ease-out !important;
+}
+
+@keyframes pageLoad {
+    0% {
+        opacity: 0 !important;
+        transform: translateY(20px) !important;
+    }
+    100% {
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+    }
+}
+
+/* Navbar Menu Animations */
+.navmenu ul li {
+    animation: fadeInDown 0.8s ease-out !important;
+    animation-fill-mode: both !important;
+}
+
+.navmenu ul li:nth-child(1) { animation-delay: 0.1s !important; }
+.navmenu ul li:nth-child(2) { animation-delay: 0.2s !important; }
+.navmenu ul li:nth-child(3) { animation-delay: 0.3s !important; }
+.navmenu ul li:nth-child(4) { animation-delay: 0.4s !important; }
+.navmenu ul li:nth-child(5) { animation-delay: 0.5s !important; }
+.navmenu ul li:nth-child(6) { animation-delay: 0.6s !important; }
+
+@keyframes fadeInDown {
+    0% {
+        transform: translateY(-30px) !important;
+        opacity: 0 !important;
+    }
+    100% {
+        transform: translateY(0) !important;
+        opacity: 1 !important;
+    }
+}
+
+/* Menu Hover Effects */
+.navmenu ul li a {
+    transition: all 0.3s ease !important;
+    position: relative !important;
+}
+
+.navmenu ul li a:hover {
+    transform: translateY(-3px) !important;
+    background: rgba(201, 181, 156, 0.1) !important;
+    border-radius: 8px !important;
+    color: #c9b59c !important;
+    box-shadow: 0 5px 15px rgba(201, 181, 156, 0.3) !important;
+}
+
+/* Logo Animation */
+.logo {
+    animation: logoSlideIn 1s ease-out !important;
+}
+
+@keyframes logoSlideIn {
+    0% {
+        transform: translateX(-50px) rotate(-10deg) !important;
+        opacity: 0 !important;
+    }
+    50% {
+        transform: translateX(10px) rotate(5deg) !important;
+    }
+    100% {
+        transform: translateX(0) rotate(0deg) !important;
+        opacity: 1 !important;
+    }
+}
+
+.logo:hover {
+    transform: scale(1.1) rotate(2deg) !important;
+    transition: all 0.3s ease !important;
+}
+
+/* Dashboard Cards Animation */
+.stats-card, .action-card {
+    animation: slideInUp 0.8s ease-out !important;
+    animation-fill-mode: both !important;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+}
+
+.stats-card:nth-child(1), .action-card:nth-child(1) { animation-delay: 0.1s !important; }
+.stats-card:nth-child(2), .action-card:nth-child(2) { animation-delay: 0.2s !important; }
+.stats-card:nth-child(3), .action-card:nth-child(3) { animation-delay: 0.3s !important; }
+.stats-card:nth-child(4), .action-card:nth-child(4) { animation-delay: 0.4s !important; }
+
+@keyframes slideInUp {
+    0% {
+        transform: translateY(50px) !important;
+        opacity: 0 !important;
+    }
+    100% {
+        transform: translateY(0) !important;
+        opacity: 1 !important;
+    }
+}
+
+.stats-card:hover, .action-card:hover {
+    transform: translateY(-15px) scale(1.05) !important;
+    box-shadow: 0 25px 50px rgba(201, 181, 156, 0.4) !important;
+}
+
+/* Article Cards Animation */
+.article-card, .card-enhanced {
+    animation: cardSlideIn 0.8s ease-out !important;
+    animation-fill-mode: both !important;
+}
+
+@keyframes cardSlideIn {
+    0% {
+        transform: translateY(30px) scale(0.9) !important;
+        opacity: 0 !important;
+    }
+    100% {
+        transform: translateY(0) scale(1) !important;
+        opacity: 1 !important;
+    }
+}
+
+.article-card:hover, .card-enhanced:hover {
+    transform: translateY(-15px) scale(1.05) !important;
+    box-shadow: 0 25px 50px rgba(201, 181, 156, 0.4) !important;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+}
+
+/* Button Animations */
+.btn-enhanced, .btn {
+    animation: bounceIn 0.8s ease-out !important;
+    transition: all 0.3s ease !important;
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.3) !important;
+        opacity: 0 !important;
+    }
+    50% {
+        transform: scale(1.05) !important;
+    }
+    70% {
+        transform: scale(0.9) !important;
+    }
+    100% {
+        transform: scale(1) !important;
+        opacity: 1 !important;
+    }
+}
+
+.btn-enhanced:hover, .btn:hover {
+    transform: translateY(-3px) scale(1.05) !important;
+    box-shadow: 0 10px 25px rgba(201, 181, 156, 0.4) !important;
+}
+
+/* Mini Cards Animation */
+.stat-mini-card {
+    animation: fadeInScale 0.8s ease-out !important;
+    animation-fill-mode: both !important;
+}
+
+.stat-mini-card:nth-child(1) { animation-delay: 0.1s !important; }
+.stat-mini-card:nth-child(2) { animation-delay: 0.2s !important; }
+.stat-mini-card:nth-child(3) { animation-delay: 0.3s !important; }
+.stat-mini-card:nth-child(4) { animation-delay: 0.4s !important; }
+
+@keyframes fadeInScale {
+    0% {
+        transform: scale(0.8) !important;
+        opacity: 0 !important;
+    }
+    100% {
+        transform: scale(1) !important;
+        opacity: 1 !important;
+    }
+}
+
+.stat-mini-card:hover {
+    transform: translateY(-10px) scale(1.1) !important;
+    box-shadow: 0 20px 40px rgba(201, 181, 156, 0.5) !important;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+}
+
+/* Welcome Card Animation */
+.welcome-card {
+    animation: slideInDown 1s ease-out !important;
+}
+
+@keyframes slideInDown {
+    0% {
+        transform: translateY(-50px) !important;
+        opacity: 0 !important;
+    }
+    100% {
+        transform: translateY(0) !important;
+        opacity: 1 !important;
+    }
+}
+
+/* Header Animation */
+#header {
+    animation: headerSlideDown 0.8s ease-out !important;
+}
+
+@keyframes headerSlideDown {
+    0% {
+        transform: translateY(-100%) !important;
+        opacity: 0 !important;
+    }
+    100% {
+        transform: translateY(0) !important;
+        opacity: 1 !important;
+    }
+}
+
+/* Dropdown Animation */
+.dropdown-menu {
+    animation: dropdownSlideIn 0.3s ease-out !important;
+}
+
+@keyframes dropdownSlideIn {
+    0% {
+        opacity: 0 !important;
+        transform: translateY(-10px) scale(0.95) !important;
+    }
+    100% {
+        opacity: 1 !important;
+        transform: translateY(0) scale(1) !important;
+    }
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background: linear-gradient(135deg, #c9b59c 0%, #b8a082 100%) !important;
+    color: white !important;
+    transform: translateX(5px) !important;
+    transition: all 0.3s ease !important;
+}
+
+/* Pulse Animation for Badges */
+.badge {
+    animation: pulse 2s infinite !important;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1) !important;
+    }
+    50% {
+        transform: scale(1.1) !important;
+    }
+    100% {
+        transform: scale(1) !important;
+    }
+}
+
+/* Icon Bounce */
+.icon-bounce {
+    animation: bounce 2s infinite !important;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0) !important;
+    }
+    40% {
+        transform: translateY(-10px) !important;
+    }
+    60% {
+        transform: translateY(-5px) !important;
+    }
+}
+
+/* Force all animations to work */
+.animated {
+    animation-duration: 1s !important;
+    animation-fill-mode: both !important;
+    animation-play-state: running !important;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .stats-card:hover, .action-card:hover {
+        transform: translateY(-8px) scale(1.02) !important;
+    }
+    
+    .article-card:hover, .card-enhanced:hover {
+        transform: translateY(-8px) scale(1.02) !important;
+    }
+    
+    .stat-mini-card:hover {
+        transform: translateY(-5px) scale(1.05) !important;
+    }
+}

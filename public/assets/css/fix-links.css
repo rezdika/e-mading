@@ -1,0 +1,59 @@
+/* Fix untuk link yang tidak bisa diklik */
+.blog-hero-content .read-more,
+.blog-card h3 a,
+.btn-read-more,
+.readmore.stretched-link,
+.post-entry h2 a {
+    position: relative !important;
+    z-index: 999 !important;
+    pointer-events: auto !important;
+    display: inline-block !important;
+}
+
+.blog-hero-item {
+    position: relative;
+}
+
+.blog-hero-content {
+    position: relative;
+    z-index: 10;
+}
+
+.blog-card {
+    position: relative;
+}
+
+.blog-content {
+    position: relative;
+    z-index: 10;
+}
+
+.featured-post {
+    position: relative;
+}
+
+.featured-content {
+    position: relative;
+    z-index: 10;
+}
+
+/* Pastikan swiper tidak menghalangi */
+.swiper-slide {
+    pointer-events: auto !important;
+}
+
+.swiper-wrapper {
+    pointer-events: auto !important;
+}
+
+/* Fix untuk stretched link */
+.stretched-link::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    content: "";
+    pointer-events: auto !important;
+}

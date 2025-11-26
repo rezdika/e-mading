@@ -1,0 +1,112 @@
+/* Custom Icons for Mading Arga */
+.page-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    display: block;
+    text-align: center;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.page-icon:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    display: block;
+    text-align: center;
+    opacity: 0.9;
+}
+
+.mini-icon {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+/* Specific page icons */
+.icon-dashboard { content: "🏠"; }
+.icon-articles { content: "📰"; }
+.icon-read-articles { content: "📖"; }
+.icon-write-articles { content: "✍️"; }
+.icon-categories { content: "📂"; }
+.icon-users { content: "👥"; }
+.icon-statistics { content: "📊"; }
+.icon-reports { content: "📋"; }
+.icon-notifications { content: "🔔"; }
+.icon-settings { content: "⚙️"; }
+.icon-upload { content: "☁️"; }
+.icon-moderation { content: "🛡️"; }
+.icon-profile { content: "👤"; }
+.icon-home-settings { content: "🏡"; }
+.icon-tutorial { content: "📚"; }
+.icon-archive { content: "🗃️"; }
+.icon-contact { content: "📞"; }
+.icon-search { content: "🔍"; }
+.icon-like { content: "❤️"; }
+.icon-comment { content: "💬"; }
+.icon-share { content: "📤"; }
+.icon-edit { content: "✏️"; }
+.icon-delete { content: "🗑️"; }
+.icon-approve { content: "✅"; }
+.icon-reject { content: "❌"; }
+.icon-pending { content: "⏳"; }
+.icon-published { content: "🌟"; }
+.icon-draft { content: "📝"; }
+
+/* Icon backgrounds for better visibility */
+.icon-bg {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    padding: 1rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+/* Animated icons */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+.icon-bounce {
+    animation: bounce 2s infinite;
+}
+
+/* Gradient icon backgrounds */
+.icon-gradient-blue {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.icon-gradient-green {
+    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.icon-gradient-orange {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.icon-gradient-cyan {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
